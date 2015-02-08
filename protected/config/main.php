@@ -25,6 +25,9 @@ return array(
 		'admini'=>array(
 		     'class'=>'application.modules.admini.AdminiModule',
 		),
+                'calendar'=>array(
+		     'class'=>'application.modules.calendar.CalendarModule',
+		),
 		'account'=>array(
 		     'class'=>'application.modules.account.AccountModule',
 		)
@@ -34,14 +37,14 @@ return array(
            'class'=>'CFileCache',
         ),
 		'db'=>array(
-			'connectionString' => 'mysql:host=127.0.0.1;dbname=bagecms',
+			'connectionString' => 'mysql:host=127.0.0.1;dbname=onlinesjtu',
 			'emulatePrepare' => true,
 			'enableParamLogging' => true,
 			'enableProfiling'=>true,
 			'username' => 'root',
 			'password' => '123456',
 			'charset' => 'utf8',
-			'tablePrefix' => 'bage_',
+			'tablePrefix' => 'sjtu_',
 		),
 		'errorHandler'=>array(
             'errorAction'=>'error/index',
