@@ -90,7 +90,7 @@ $(function(){
       <?php endif?></td>
   </tr>
   <tr>
-    <td class="tb_title">栏目介绍：</td>
+    <td class="tb_title">类别介绍：</td>
   </tr>
   <tr >
     <td ><?php echo $form->textArea($model,'content'); ?>

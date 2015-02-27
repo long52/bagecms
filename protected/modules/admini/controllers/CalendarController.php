@@ -86,8 +86,8 @@ protected function _showDate()
     $nums++; 
     } 
     $this->_table.="</tbody></table>"; 
-    $this->_table.="<h3><a href='".$this->createUrl('calendar/calendar/index',array('y'=>$this->_year,'m'=>$this->_month-1))."'>上一月</a>   "; 
-    $this->_table.="<a href='".$this->createUrl('calendar/calendar/index',array('y'=>$this->_year,'m'=>$this->_month+1))."'>下一月</a></h3>"; 
+    $this->_table.="<h3><a href='".$this->createUrl('admini/calendar/index',array('y'=>$this->_year,'m'=>$this->_month-1))."'>上一月</a>   "; 
+    $this->_table.="<a href='".$this->createUrl('admini/calendar/index',array('y'=>$this->_year,'m'=>$this->_month+1))."'>下一月</a></h3>"; 
     } 
  
 }

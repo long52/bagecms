@@ -20,8 +20,8 @@ class Controller extends CController
     protected $_conf;
     protected $_theme;
     protected $_themePath;
-    protected $_bagecms = 'BageCMS3.1.2';
-    protected $_bagecmsRelease = '20140810';
+    protected $_bagecms = 'XUNLONG1.1.1';
+    protected $_bagecmsRelease = '20150210';
 
     /**
 	 * 初始化

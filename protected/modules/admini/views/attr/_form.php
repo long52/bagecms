@@ -34,7 +34,7 @@ $(function(){
   <tr >
     <td class="tb_title">适用范围：<?php echo $form->dropDownList($model,'scope',XParams::$attrScope,array('onchange'=>'changeScope(this)')); ?><span id="catalogSpan" <?php if($model->scope != 'post'):?>style="display:none"<?php endif?>> 栏目归属：
       <select name="Attr[catalog_id]" >
-        <option value="0">==选择栏目==</option>
+        <option value="0">==选择类别==</option>
         <?php foreach((array)Catalog::get(0, $this->_catalog) as $catalog):?>
         <option value="<?php echo $catalog['id']?>" <?php XUtils::selected($catalog['id'], $model->catalog_id);?>><?php echo $catalog['str_repeat']?><?php echo $catalog['catalog_name']?></option>
         <?php endforeach;?>

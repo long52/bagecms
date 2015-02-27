@@ -25,7 +25,7 @@
   </tr>
   <tr>
     <td >产品支持</td>
-    <td ><a href="http://www.bagecms.com" target="_blank">www.bagecms.com </a><a href="http://www.bagecms.com/help" target="_blank">使用手册</a></td>
+    <td ><a href="http://www.bagecms.com" target="_blank">www.bagecms.com </a></td>
   </tr>
   <tr>
     <td >操作系统软件</td>

@@ -80,6 +80,8 @@ class Post extends XBaseModel
 			'seo_description' => 'SEO描述',
 			'seo_keywords' => 'SEO关键字',
 			'content' => '内容',
+                        'time_start' => '来源',
+			'time_end' => '来源url',
 			'copy_from' => '来源',
 			'copy_url' => '来源url',
 			'redirect_url' => '跳转URL',

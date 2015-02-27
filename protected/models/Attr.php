@@ -61,7 +61,7 @@ class Attr extends XBaseModel
 			'scope' => '使用范围',
 			'attr_name' => '字段名称',
 			'attr_name_alias' => '字段别名',
-			'catalog_id' => '所属栏目',
+			'catalog_id' => '所属类别',
 			'tips' => '说明',
 			'sort_order' => '排序',
 			'attr_type' => '字段类型',

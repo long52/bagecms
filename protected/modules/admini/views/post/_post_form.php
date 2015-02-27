@@ -40,13 +40,24 @@
         <option value="<?php echo $catalog['id']?>" <?php XUtils::selected($catalog['id'], $model->catalog_id);?>><?php echo $catalog['str_repeat']?><?php echo $catalog['catalog_name']?></option>
         <?php endforeach;?>
       </select>
-      <select name="Post[special_id]">
+<!--      <select name="Post[special_id]">
         <option value="0">==所属专题==</option>
         <?php foreach((array)Bagecms::getList('Special', '_special') as $speical):?>
         <option value="<?php echo $speical['id']?>" <?php XUtils::selected($speical['id'], $model->special_id);?>><?php echo $speical['title']?></option>
         <?php endforeach;?>
-      </select></td>
+      </select>
+    -->
+    </td>
   </tr>
+  
+   <tr>
+    <td class="tb_title">时间：</td>
+  </tr>
+  <tr >
+    <td  >开始时间<?php echo $form->textField($model,'time_start',array('size'=>20,'maxlength'=>50)); ?>结束时间<?php echo $form->textField($model,'time_end',array('size'=>20,'maxlength'=>50)); ?></td>
+  </tr>
+  
+<!--  
   <tr>
     <td class="tb_title">来源：</td>
   </tr>
@@ -56,7 +67,7 @@
   <tr>
     <td class="tb_title">跳转网址(此处若填写，则不显示内容)：</td>
   </tr>
-  <tr >
+  <tr >-->
     <td  ><?php echo $form->textField($model,'redirect_url',array('size'=>60,'maxlength'=>128)); ?></td>
   </tr>
   <tr>
@@ -106,7 +117,7 @@
     <td class="tb_title">模板：</td>
   </tr>
   <tr >
-    <td ><?php echo $form->textField($model,'template',array('size'=>30,'maxlength'=>80)); ?>留空则继承栏目中设置的模板</td>
+    <td ><?php echo $form->textField($model,'template',array('size'=>30,'maxlength'=>80)); ?>留空则继承类别中设置的模板</td>
   </tr>
   <tr>
     <td  class="tb_title">Tags(逗号或空格隔开)：</td>

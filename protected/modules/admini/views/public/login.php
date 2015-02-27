@@ -2,12 +2,12 @@
 
 <head>
 <meta charset="utf-8">
-<title>管理登录 - BageCMS</title>
-<meta name="keywords" content="bagecms,bageSOFT" />
-<meta name="description" content="bagecms(八哥CMS),专业的建站工具" />
-<meta name="generator" content="BageCMS3.1" />
-<meta name="author" content="bagecms.com" />
-<meta name="copyright" content="2013-2014 bagecms.com" />
+<title>管理登录 - xunlong.me</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="generator" content="" />
+<meta name="author" content="" />
+<meta name="copyright" content="2013-2015 xunlong.me" />
 <link rel="stylesheet" type="text/css" href="<?php echo $this->_baseUrl?>/static/admin/css/login-style.css" />
 <script type="text/javascript" language="javascript">
     //<![CDATA[
@@ -45,7 +45,7 @@
       <?php $this->endWidget(); ?>
     </div>
     <br class="clear-fix"/>
-    <div class="copyright">Copyright&copy; <a title="bagecms" target="_blank" href="http://www.bagecms.com">bagecms.com</a>. All Thrusts Reserved.</div>
+    <div class="copyright">Copyright&copy; <a title="bagecms" target="_blank" href="http://www.xunlong.me">xunlong.me</a>. All Thrusts Reserved.</div>
   </div>
 </div>
 </body>

@@ -19,13 +19,10 @@
     <td width="100" >程序版本</td>
     <td ><?php echo $this->_bagecms?> <?php echo $this->_bagecmsRelease?></td>
   </tr>
-  <tr>
-    <td >最新版本</td>
-    <td ><span id="bagesoftVersion"></span></td>
-  </tr>
+   
   <tr>
     <td >产品支持</td>
-    <td ><a href="http://www.bagecms.com" target="_blank">www.bagecms.com </a><a href="http://www.bagecms.com/help" target="_blank">使用手册</a></td>
+    <td ><a href="http://www.xunlong.me" target="_blank">www.xunlong.me </a></td>
   </tr>
   <tr>
     <td >操作系统软件</td>

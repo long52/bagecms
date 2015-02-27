@@ -33,7 +33,7 @@
       <td ><span class="vtop rowform">
         <label for="scope[_config]"></label>
         <input name="scope[]" type="checkbox" id="scope[_catalog]" value="_catalog" />
-        <label for="scope[_catalog]"> 栏目</label>
+        <label for="scope[_catalog]"> 类别</label>
         </span></td>
     </tr>
     <tr class="submit">

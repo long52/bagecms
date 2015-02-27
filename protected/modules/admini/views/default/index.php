@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<title>BageCMS管理系统</title>
+<title>个人时间规划-管理系统</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="<?php echo $this->_baseUrl?>/static/admin/css/manage.css">
 <script type="text/javascript" src="<?php echo $this->_baseUrl?>/static/js/jquery/jquery-1.7.1.min.js"></script>
