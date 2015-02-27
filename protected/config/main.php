@@ -25,9 +25,6 @@ return array(
 		'admini'=>array(
 		     'class'=>'application.modules.admini.AdminiModule',
 		),
-                'calendar'=>array(
-		     'class'=>'application.modules.calendar.CalendarModule',
-		),
 		'account'=>array(
 		     'class'=>'application.modules.account.AccountModule',
 		)
