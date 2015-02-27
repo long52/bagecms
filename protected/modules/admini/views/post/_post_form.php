@@ -67,9 +67,9 @@
   <tr>
     <td class="tb_title">跳转网址(此处若填写，则不显示内容)：</td>
   </tr>
-  <tr >-->
+  <tr >
     <td  ><?php echo $form->textField($model,'redirect_url',array('size'=>60,'maxlength'=>128)); ?></td>
-  </tr>
+  </tr>-->
   <tr>
     <td class="tb_title">封面图片：</td>
   </tr>
@@ -94,7 +94,7 @@
   <tr >
     <td><?php echo CHtml::activeTextArea($model,'intro',array('rows'=>5, 'cols'=>90)); ?></td>
   </tr>
-  <tr>
+<!--  <tr>
     <td class="tb_title">组图：</td>
   </tr>
   <tr >
@@ -161,7 +161,7 @@
       <td  colspan="2"><div id="attr2cotnent">
           <?php $this->renderPartial('/_include/attr2content', array('attrModel'=>$attrModel, 'attrData'=>$attrData));?>
         </div></td>
-    </tr>
+    </tr>-->
   </tbody>
   <tr class="submit">
     <td colspan="2" ><input name="oAttach" type="hidden" value="<?php echo $model->attach_file ?>" />
