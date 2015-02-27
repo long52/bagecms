@@ -54,7 +54,7 @@
     <td class="tb_title">时间：</td>
   </tr>
   <tr >
-    <td  >开始时间<?php echo $form->textField($model,'time_start',array('size'=>20,'maxlength'=>50)); ?>结束时间<?php echo $form->textField($model,'time_end',array('size'=>20,'maxlength'=>50)); ?></td>
+    <td>开始时间<?php echo $form->textField($model,'time_start',array('size'=>20,'maxlength'=>50 ,'onfocus'=>'WdatePicker({skin:"whyGreen",dateFmt:"yyyy-MM-dd H:mm:ss"})' ,'class'=>'Wdate' )); ?>结束时间<?php echo $form->textField($model,'time_end',array('size'=>20,'maxlength'=>50,'onfocus'=>'WdatePicker({skin:"whyGreen",dateFmt:"yyyy-MM-dd H:mm:ss"})' ,'class'=>'Wdate')); ?></td>
   </tr>
   
 <!--  
