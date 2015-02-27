@@ -57,9 +57,9 @@ class XAdminiAcl
                 array('name'=>'管理员日志','url'=>'logger/admin','acl'=>'admin_logger','list_acl'=>array(
                         '删除'=>'admin_logger_delete'
                         )),
-                array('name'=>'留言反馈','url'=>'question/index','acl'=>'question_index','list_acl'=>array(
-                        '回复'=>'question_update', '删除'=>'question_delete'
-                        )),
+//                array('name'=>'留言反馈','url'=>'question/index','acl'=>'question_index','list_acl'=>array(
+//                        '回复'=>'question_update', '删除'=>'question_delete'
+//                        )),
             )
           ),
 //        '模板' => array(
