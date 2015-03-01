@@ -25,6 +25,11 @@ class PostController extends XAdminiBase
         $title = trim( $this->_gets->getParam( 'title' ) );
         $titleAlias = trim( $this->_gets->getParam( 'titleAlias' ) );
         $catalogId = intval( $this->_gets->getParam( 'catalogId' ) );
+        
+        if($this->_adminiGroupId!=1){
+             $condition .= ' AND user_id= ' . $this->_adminiUserId;
+        }
+        
         $title && $condition .= ' AND title LIKE \'%' . $title . '%\'';
         $titleAlias && $condition .= ' AND title_alias LIKE \'%' . $titleAlias . '%\'';
         $catalogId && $condition .= ' AND catalog_id= ' . $catalogId;
@@ -68,6 +73,7 @@ class PostController extends XAdminiBase
             $model->title_style_serialize = $styleFormat['serialize'];
             $model->acl = is_array( $acl )? implode( ',', $acl ): '';
             $model->image_list = $imageListSerialize['dataSerialize'];
+            $model->user_id = $this->_adminiUserId;
             if ($model->save() ) {
                 Attr::create( $model->id,  $attr );
                 Post2tags::build( 'create', $_POST['Post']['tags'], $model->id, $model->catalog_id );

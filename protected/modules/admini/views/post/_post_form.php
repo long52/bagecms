@@ -13,11 +13,14 @@
   </tr>
   <tr >
     <td ><?php echo $form->textField($model,'title',array('size'=>60,'maxlength'=>128, 'class'=>'validate[required]')); ?>
-      <input name="style[bold]" type="checkbox" id="style[bold]" value="Y" <?php XUtils::selected(XUtils::titleStyleRestore($model->title_style_serialize, 'bold'),'Y', 'checkbox')?>>
-      加粗
+   <!--   
+        <input name="style[bold]" type="checkbox" id="style[bold]" value="Y" <?php XUtils::selected(XUtils::titleStyleRestore($model->title_style_serialize, 'bold'),'Y', 'checkbox')?>>
+     加粗
       <input name="style[underline]" type="checkbox" id="style[underline]" value="Y" <?php XUtils::selected(XUtils::titleStyleRestore($model->title_style_serialize, 'underline'),'Y', 'checkbox')?>>
       下划线
-      <input name="style[color]" class="color {required:false}" id="style[color]" value="<?php echo XUtils::titleStyleRestore($model->title_style_serialize, 'color')?>" size="5"></td>
+      <input name="style[color]" class="color {required:false}" id="style[color]" value="<?php echo XUtils::titleStyleRestore($model->title_style_serialize, 'color')?>" size="5">
+-->
+</td>
   </tr>
   <tr>
     <td class="tb_title">副标题：</td>
