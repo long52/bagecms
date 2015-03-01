@@ -94,13 +94,13 @@ class XAdminiAcl
                 //array('name'=>'程序升级','url'=>'upgrade/index','acl'=>'upgrade/index','list_acl'=>array()),
             )
           ),
-          '日程' => array(
-    	   'controller'=>'calendar', 'url'=>'calendar/index', 'acl'=>'calendar','action'=>array(
-                array('name'=>'日程管理','url'=>'calendar/index','acl'=>'calendar_index','list_acl'=>array(
-                        '录入'=>'calendar_create', '编辑'=>'calendar_update', '批量审核'=>'calendar_verify', '批量推荐'=>'calendar_commend', '删除'=>'calendar_delete'
-                        )),
-        	)
-          ),
+//          '日程' => array(
+//    	   'controller'=>'calendar', 'url'=>'calendar/index', 'acl'=>'calendar','action'=>array(
+//                array('name'=>'日程管理','url'=>'calendar/index','acl'=>'calendar_index','list_acl'=>array(
+//                        '录入'=>'calendar_create', '编辑'=>'calendar_update', '批量审核'=>'calendar_verify', '批量推荐'=>'calendar_commend', '删除'=>'calendar_delete'
+//                        )),
+//        	)
+//          ),
     );
     
     /**
