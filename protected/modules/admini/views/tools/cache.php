@@ -10,7 +10,7 @@
       <td class="vtop rowform"><input name="scope[]" type="checkbox" id="scope[_config]" value="_config" />
         <label for="scope[_config]"> 系统配置</label></td>
     </tr>
-    <tr >
+<!--    <tr >
       <td ><span class="vtop rowform">
         <input name="scope[]" type="checkbox" id="scope[_link]" value="_link" />
         <label for="scope[_link]"> 友情链接</label>
@@ -21,14 +21,14 @@
         <input name="scope[]" type="checkbox" id="scope[_ad]" value="_ad" />
         <label for="scope[_ad]"> 广告</label>
         </span></td>
-    </tr>
-    <!--<tr >
+    </tr>-->
+    <tr >
       <td ><span class="vtop rowform">
         <label for="scope[_config]"></label>
         <input name="scope[]" type="checkbox" id="scope[_userGroup]" value="_userGroup" />
-        <label for="scope[_userGroup]"> 会员组</label>
+        <label for="scope[_userGroup]"> 用户组</label>
         </span></td>
-    </tr>-->
+    </tr>
     <tr >
       <td ><span class="vtop rowform">
         <label for="scope[_config]"></label>

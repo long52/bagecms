@@ -35,7 +35,7 @@
     <td ><?php echo $form->textField($model,'title_alias',array('size'=>60,'maxlength'=>128)); ?></td>
   </tr>
   <tr>
-    <td class="tb_title">所属类别/所属专题：</td>
+    <td class="tb_title">所属类别：</td>
   </tr>
   <tr >
     <td ><select name="Post[catalog_id]" id="Post_catalog_id" onchange="changeCatalog(this)">

@@ -1,3 +1,6 @@
+<?php 
+$this->redirect(array ('admini/default' ));
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
