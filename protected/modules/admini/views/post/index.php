@@ -69,10 +69,10 @@ $(document).ready(function(){
           <select name="command">
             <option>选择操作</option>
             <option value="delete">删除</option>
-            <option value="verify">显示</option>
+<!--            <option value="verify">显示</option>
             <option value="unVerify">隐藏</option>
             <option value="commend">推荐</option>
-            <option value="unCommend">取消推荐</option>
+            <option value="unCommend">取消推荐</option>-->
           </select>
           <input id="submit_maskall" class="button confirmSubmit" type="submit" value="提交" name="maskall" />
         </div></td>

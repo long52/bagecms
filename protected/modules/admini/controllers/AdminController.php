@@ -14,7 +14,7 @@ class AdminController extends XAdminiBase
     protected $group_list;
     
     /**
-     * 管理员列表
+     * 用户列表
      *
      */
     public function actionIndex ()
@@ -35,7 +35,7 @@ class AdminController extends XAdminiBase
     }
 
     /**
-     * 管理员录入
+     * 用户录入
      *
      */
     public function actionCreate ()
@@ -46,7 +46,7 @@ class AdminController extends XAdminiBase
             $model->attributes = $_POST['Admin'];
             $id = $model->save();
             if ($id) {
-                parent::_adminiLogger(array ('catalog' => 'create' , 'intro' => '录入管理员:' . $model->username )); 
+                parent::_adminiLogger(array ('catalog' => 'create' , 'intro' => '录入用户:' . $model->username )); 
                 $this->redirect(array ('index' ));
             }
         }
@@ -57,7 +57,7 @@ class AdminController extends XAdminiBase
     }
 
     /**
-     * 管理员编辑
+     * 用户编辑
      *
      * @param  $id
      */
@@ -76,7 +76,7 @@ class AdminController extends XAdminiBase
             $model->attributes = $_POST['Admin'];
             
             if ($model->save()) {
-                parent::_adminiLogger(array ('catalog' => 'update' , 'intro' => '更新管理员资料:' . $model->username )); 
+                parent::_adminiLogger(array ('catalog' => 'update' , 'intro' => '更新用户资料:' . $model->username )); 
                 $this->redirect(array ('index' ));
             }
         }
@@ -86,7 +86,7 @@ class AdminController extends XAdminiBase
     }
 
     /**
-     * 管理员组
+     * 用户组列表
      *
      */
     public function actionGroup ()
@@ -105,7 +105,7 @@ class AdminController extends XAdminiBase
     }
 
     /**
-     * 管理组录入
+     * 用户组录入
      *
      */
     public function actionGroupCreate ()
@@ -120,7 +120,7 @@ class AdminController extends XAdminiBase
              else 
                 $model->acl = 'administrator';
             if ($model->save()) {
-                parent::_adminiLogger(array ('catalog' => 'create' , 'intro' => '录入管理员组' . $model->group_name ));
+                parent::_adminiLogger(array ('catalog' => 'create' , 'intro' => '录入用户组' . $model->group_name ));
                 $this->redirect(array ('group' ));
             }
         }
@@ -128,7 +128,7 @@ class AdminController extends XAdminiBase
     }
 
     /**
-     * 管理员组编辑
+     * 用户组编辑
      *
      * @param  $id
      */
@@ -145,7 +145,7 @@ class AdminController extends XAdminiBase
             else 
                 $data->acl = 'administrator';
             if ($data->save()) {
-                parent::_adminiLogger(array ('catalog' => 'create' , 'intro' => '编辑管理员组' . $data->group_name ));
+                parent::_adminiLogger(array ('catalog' => 'create' , 'intro' => '编辑用户组' . $data->group_name ));
                 $this->redirect(array ('group' ));
             }
         }
@@ -200,13 +200,13 @@ class AdminController extends XAdminiBase
             
             case 'adminDelete':
                 parent::_acl('admin_delete');
-                parent::_adminiLogger(array ('catalog' => 'delete' , 'intro' => '删除管理员,ID:' . $ids ));
+                parent::_adminiLogger(array ('catalog' => 'delete' , 'intro' => '删除用户,ID:' . $ids ));
                 parent::_delete(new Admin(), $ids, array ('index' ));
                 break;
             case 'groupDelete':
                 parent::_acl('admin_group_delete');
                 parent::_groupPrivate($ids);
-                parent::_adminiLogger(array ('catalog' => 'delete' , 'intro' => '删除管理员用户组,ID:' . $ids ));
+                parent::_adminiLogger(array ('catalog' => 'delete' , 'intro' => '删除用户组,ID:' . $ids ));
                 parent::_delete(new AdminGroup(), $ids, array ('group' ));
                 break;
             default:

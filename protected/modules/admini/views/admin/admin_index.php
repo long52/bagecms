@@ -36,12 +36,14 @@
           <?php $this->widget('CLinkPager',array('pages'=>$pagebar));?>
         </div>
         
-        <!--<div class="fixsel">
+     <div class="fixsel">
                     <input type="checkbox" name="chkall" id="chkall" onclick="checkAll('prefix', this.form, 'opentid')" />
                     <label for="chkall">全选</label>
                     <input id="submit_maskall" class="btn" type="submit" value="屏蔽" name="maskall" />
                     <input id="submit_unmaskall" class="btn" type="submit" value="取消屏蔽" name="unmaskall" />
-                </div>--></td>
+                </div>  
+      
+      </td>
     </tr>
   </form>
 </table>

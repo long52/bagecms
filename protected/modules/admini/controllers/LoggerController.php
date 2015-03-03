@@ -14,7 +14,7 @@ class LoggerController extends XAdminiBase
 {
 
     /*
-     * 管理员日志
+     * 用户操作日志
     */
     public function actionAdmin ()
     {
@@ -41,8 +41,8 @@ class LoggerController extends XAdminiBase
     }
 
     /**
-	 * 批量操作
-	 */
+      * 批量操作
+      */
     public function actionBatch ()
     {
         if (XUtils::method() == 'GET') {
