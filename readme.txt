@@ -37,3 +37,5 @@ PHP版本：php5.2.+
 后台地址：http://demo.bagecms.com/admini
 用户：bagecms
 密码：bagecms
+
+2015-06-04
